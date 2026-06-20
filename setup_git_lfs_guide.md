@@ -274,7 +274,22 @@ chmod +x setup_lfs.sh
 
 Now your CSV file will be properly stored and visible in your GitHub repository!
 
-The url to read ONLY the file content:
+## Additional Notes
+
+The url to read ONLY the file content, as the direct github.com link goes to the html not dataframe content.
+Only ONE of following works depending on whether the raw is a pointer to the actual media:
+1. Method1: 
 "https://raw.githubusercontent.com/[USERNAME]/[REPO_NAME]/[BRANCH_NAME]/[FILE_PATH]"
 
 [BRANCH_NAME] is 'main' or 'master'
+
+2. Method2: 
+"https://media.githubusercontent.com/media/[USERNAME]/[REPO_NAME]/[BRANCH_NAME]/[FILE_PATH]"
+
+Example:
+```
+url = "https://media.githubusercontent.com/media/[USERNAME]/[REPO_NAME]/[BRANCH_NAME]/[FILE_PATH]"
+data = pd.read_csv(url)
+```
+
+
