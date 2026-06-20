@@ -273,3 +273,8 @@ chmod +x setup_lfs.sh
 | `git lfs --version` | Check installed version |
 
 Now your CSV file will be properly stored and visible in your GitHub repository!
+
+The url to read ONLY the file content:
+"https://raw.githubusercontent.com/[USERNAME]/[REPO_NAME]/[BRANCH_NAME]/[FILE_PATH]"
+
+[BRANCH_NAME] is 'main' or 'master'
